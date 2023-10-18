@@ -1,10 +1,10 @@
 包里包含了多种可能涉及到版权问题的字体。
 
-有衬线：SIMFANG（仿宋），SIMSUN，SIMKAI，（楷体：GB2312，SIMKAI）
+有衬线：SIMFANG（仿宋），SIMSUN，SIMKAI，（楷体：GB2312，SIMKAI），Courier New
 
-无衬线体：Helvetica，SIMHEI（黑体）
+无衬线体：Helvetica，SIMHEI（黑体）Times New Roman
 
-等宽字体：Helvetica
+等宽字体：Helvetica，Courier New，
 
 
 
