@@ -1,0 +1,31 @@
+\ProvidesPackage{Slide}
+%% 注意Slide是大写
+%% 一：底部导航条样式设置
+%  注：\useoutertheme{infolines} 在任一主题中添加底边导航条
+
+% 1. 样式1：author, title, 日期/帧序号
+\defbeamertemplate{footline}{FootlineTemplateI}{%
+	\leavevmode% 离开vmode，也就是离开竖直模式，进入水平模式
+	\hbox{%
+		\begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+			\ifnum \the\value{page}>0 \usebeamerfont{author in head/foot}\insertshortauthor\fi
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+			\ifnum \the\value{page}>0 \usebeamerfont{title in head/foot}\insertshorttitle\fi
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=0.3\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+			\ifnum \the\value{page}>0 \insertframenumber{} / \inserttotalframenumber\fi
+	\end{beamercolorbox}}%
+%	\vskip0pt%
+}
+\defbeamertemplate{footline}{FootlineTemplateII}{%
+	\leavevmode% 离开vmode，也就是离开竖直模式，进入水平模式
+	\hbox{%
+		\begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+			\ifnum \the\value{page}>0 \usebeamerfont{author in head/foot}{}\fi
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=0.4\paperwidth,ht=2.25ex,dp=1ex,right]{author in head/foot}%
+			\ifnum \the\value{page}>0\insertshortdate~~~\insertframenumber{}/\inserttotalframenumber~~~\fi
+	\end{beamercolorbox}}%
+%	\vskip0pt%
+}

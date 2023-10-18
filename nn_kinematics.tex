@@ -1,0 +1,121 @@
+%xelatex
+\documentclass[10pt,UTF8]{beamer}
+
+% \usepackage[fontset=none]{ctex} %ctex包含xeCJK
+% \setCJKfamilyfont{song}[AutoFakeBold = {3.17},Path=fonts/]{SIMSUN.TTC}  
+% % \newcommand{\song}{\CJKfamily{song}} %例子，定义一个新命令 \song 使得后面的字体变成宋体
+% \text{中午\fontname\font} %查看当前字体
+
+\usefonttheme{professionalfonts} % 使用非标准字体
+\usefonttheme{serif}
+
+%%%%%%%% 设置中文字体 %%%%%%%%%%
+\usepackage{xeCJK} %导入中文包
+\setCJKmainfont{SIMSUN.TTC}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
+\setCJKsansfont{SIMFANG.TTF}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
+\setCJKmonofont{SIMKAI.TTF}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
+
+%%%%%%%% 设置英文字体 %%%%%%%%%%
+\usepackage{fontspec}
+\setmainfont{Times New Roman}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
+\setsansfont{Helvetica.ttc}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
+\setmonofont{Courier New}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
+
+\usepackage{graphicx}
+\usetheme{Frankfurt} %主题
+\usecolortheme{sustech} %主题颜色
+\usepackage[ruled,linesnumbered]{algorithm2e}
+
+% \usepackage{times}% 过时的宏包，使用新的宏包代替
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{bookmark}
+\setbeamertemplate{bibliography item}[text]
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{frametitle}{size=\footnotesize} %页标题字号
+%\setbeamertemplate{headline}{} %去除导航栏
+\usepackage{Slide} %自己写的包
+\setbeamertemplate{footline}[FootlineTemplateI]%自己写的包
+
+\usepackage{cite}
+\usepackage{caption}
+\usepackage{hyperref}
+
+
+
+
+
+
+
+
+
+
+
+
+\title{**的基本认知}
+\author[***] {学生：**}
+\institute[**大学]{\large{**学院}}
+\date{\today}
+%\logo{\includegraphics[height=0.09\textwidth]{./figures/usstlogo.jpg}}
+
+%目录设置
+\AtBeginSection[]
+{
+	\begin{frame}<beamer>
+	\frametitle{\textbf{目录}}
+	\tableofcontents[currentsection]
+	\end{frame}
+}
+
+
+
+\begin{document}
+
+\begin{frame}\thispagestyle{empty}
+	\titlepage
+    \begin{picture}(1,1)
+        \put(270,-20){\includegraphics[width=0.2\linewidth]{./figures/tju.jpg}}
+    \end{picture}
+\end{frame}        
+
+\section[目录]{}
+\begin{frame}{目录}
+    \tableofcontents
+\end{frame}
+
+\begin{frame}
+    The current font is\\
+    .
+    当前中文字体类型是：
+
+\end{frame}
+
+
+\begin{frame}{No.12}
+		\begin{itemize}
+		\item 1.
+		\item 2. 
+		\item 3. 
+		\item 4. 
+		
+		\end{itemize}
+\end{frame}
+
+
+\section{***}
+\subsection{****}
+
+
+\section{参考文献}
+\begin{frame}[allowframebreaks]{References}
+    \nocite{*}
+    \tiny \bibliography{ref.bib}
+    \bibliographystyle{IEEEtran} 
+\end{frame}
+
+
+
+
+\end{document}
