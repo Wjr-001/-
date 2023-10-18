@@ -26,4 +26,7 @@
 \setsansfont{Helvetica.ttc}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
 \setmonofont{Courier New}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
 ```
-
+```latex
+%！xeltaex，utf-8
+\text{中午\fontname\font}%显示当前字体格式
+```
