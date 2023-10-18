@@ -11,14 +11,19 @@
 ```latex
 %！xeltaex，utf-8
 
-%%%%%%%% 设置中文字体 %%%%%%%%%%
-\setCJKmainfont{SIMSUN.TTC}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
-\setCJKsansfont{SIMHEI.TTF}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
+\usefonttheme{professionalfonts} % 使用非标准字体
+\usefonttheme{serif}
 
+%%%%%%%% 设置中文字体 %%%%%%%%%%
+\usepackage{xeCJK} %导入中文包
+\setCJKmainfont{SIMSUN.TTC}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
+\setCJKsansfont{SIMFANG.TTF}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
+\setCJKmonofont{SIMKAI.TTF}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
 
 %%%%%%%% 设置英文字体 %%%%%%%%%%
 \usepackage{fontspec}
-\setmainfont{Times New Roman}
-\setsansfont{Helvetica.ttc}[Path=fonts/]
+\setmainfont{Times New Roman}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
+\setsansfont{Helvetica.ttc}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
+\setmonofont{Courier New}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
 ```
 
