@@ -25,6 +25,10 @@
 \setmainfont{Times New Roman}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
 \setsansfont{Helvetica.ttc}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
 \setmonofont{Courier New}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
+
+%%%%%%%%% 数学环境 %%%%%%%%%%
+\usepackage{amsmath} %更加丰富数学公式
+\usepackage{amssymb} %数学符号
 ```
 ```latex
 %！xelatex，utf-8
