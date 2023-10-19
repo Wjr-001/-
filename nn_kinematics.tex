@@ -21,31 +21,35 @@
 \setsansfont{Helvetica.ttc}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
 \setmonofont{Courier New}[AutoFakeSlant,AutoFakeBold,Path=fonts/]
 
-\usepackage{graphicx}
-\usetheme{Frankfurt} %主题
-\usecolortheme{sustech} %主题颜色
-\usepackage[ruled,linesnumbered]{algorithm2e}
+%%%%%%%%% 数学环境 %%%%%%%%%%
+\usepackage{amsmath} %更加丰富数学公式
+\usepackage{amssymb} %数学符号
 
-% \usepackage{times}% 过时的宏包，使用新的宏包代替
+%%%%%%%%% 其它一些包 %%%%%%%%%%
+\usepackage{graphicx}
+
+\usepackage[ruled,linesnumbered]{algorithm2e}
 \usepackage{listings}
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{colortbl}
 \usepackage{bookmark}
-\setbeamertemplate{bibliography item}[text]
-\setbeamertemplate{caption}[numbered]
-\setbeamerfont{frametitle}{size=\footnotesize} %页标题字号
-%\setbeamertemplate{headline}{} %去除导航栏
-\usepackage{Slide} %自己写的包
-\setbeamertemplate{footline}[FootlineTemplateI]%自己写的包
+
 
 \usepackage{cite}
 \usepackage{caption}
 \usepackage{hyperref}
 
+%%%%%%%%%  自定义的包  %%%%%%%%%%%
+\usetheme{Frankfurt} %主题
+\usecolortheme{sustech} %主题颜色
+\setbeamertemplate{bibliography item}[text]
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{frametitle}{size=\footnotesize} %页标题字号
+%\setbeamertemplate{headline}{} %去除导航栏
 
-
-
+\usepackage{Slide} %自己写的包
+\setbeamertemplate{footline}[FootlineTemplateI]%自己写的包
 
 
 
@@ -86,9 +90,13 @@
 \end{frame}
 
 \begin{frame}
-    The current font is\\
+    \begin{equation}
+        ZZZZZ \implies \mathbb{R} \mathit{c\fontname\font} \beta a \fontname\font \mathit{x}\mathsf{a\fontname\font}
+    \end{equation}
+    
+    The current font is\fontname\font\\
     .
-    当前中文字体类型是：
+    当前中文字体类型是 \textit{中文\fontname\font}
 
 \end{frame}
 
